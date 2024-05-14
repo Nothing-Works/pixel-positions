@@ -33,7 +33,7 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-    public function employers(): HasOne
+    public function employer(): HasOne
     {
         return $this->hasOne(Employer::class);
     }
